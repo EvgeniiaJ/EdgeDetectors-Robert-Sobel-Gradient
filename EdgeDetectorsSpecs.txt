@@ -1,0 +1,22 @@
+          Project 5
+          
+Robert, Sobel and Gradient Edge Detectors 	     
+
+
+I. Input (argv[1] / args[0]): a txt file representing a grey-scale image with header. 
+
+II.  Output:
+      - robertEdgeResult:   Use argv[2] / args[1] - result of the sum of two Robert's edge image.
+	    - sobelEdgeResult:    Use argv[3] / args[2] - result of the sum of two Sobel edge images.
+      - gradientEdgeResultt:  Use argv[4] / args[3] - result of the gradient image.
+	    - printing:   Use args[4] for the pretty printing all files.
+	    - debugingResult:   Use args[5] for all debugging print.
+
+
+ III. For each of the three edge image files: 
+RobertEdgeResult, SobelEdgeResult, and GradientEdgeResult
+
+		- Compute the histogram of the file;
+	  - Use your auto-threshold program to select the "best" threshold value to do thresholding on the file
+		- print the overlay bi- Gaussian curves on histogram.
+		- prettyPrint the result of the threshold 

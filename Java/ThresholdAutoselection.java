@@ -250,11 +250,11 @@ public class ThresholdAutoselection {
 			for (int i = 0; i <= max; i++) {
 				output.write(i + "  (" + histAry[i] + "):");
 				if (histAry[i] != 0) {
-					int max = histAry[i];
-					if (max > 30) {
-						max = 30;
+					int maxVal = histAry[i];
+					if (maxVal > 30) {
+						maxVal = 30;
 					}
-					for (int j = 0; j < max; j++) {
+					for (int j = 0; j < maxVal; j++) {
 						output.write("+");
 					}
 				}

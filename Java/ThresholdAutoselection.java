@@ -61,7 +61,7 @@ public class ThresholdAutoselection {
 			histogramArray = new int[max + 1];
 			gaussianArray = new int[max + 1];
 			
-			for(int i = 0; i < max; i++) {
+			for(int i = 0; i <= max; i++) {
 				histogramArray[i] = 0;
 				gaussianArray[i] = 0;
 			}
@@ -245,7 +245,7 @@ public class ThresholdAutoselection {
 		}
 	}
 
-	void printHistogram(int[] histAry, FileWriter output) {
+	public void printHistogram(int[] histAry, FileWriter output) {
 		try {
 			for (int i = 0; i <= max; i++) {
 				output.write(i + "  (" + histAry[i] + "):");
